@@ -33,8 +33,8 @@ const GiftCard = ({getMyGiftCard, valid,  onChangeNumber, mobileNumber}) => {
 		return (
 			<Flex width={['100%']} mt={'48px'} px={'24px'} alignItems='center' flexDirection='column' justifyContent='center'>
 				<InputExtended width='100%' maxLength='10' value={mobileNumber} onChange={onChangeNumber} placeholder='Enter mobile number' />
-				<ButtonExtended disabled={!valid}  mt={'12px'} backgroundColor='#0398fc' color='white' >
-					<Text bold={true} color='white' onClick={getMyGiftCard} justifyContent='center'>Wow! Get my paytm Gift card</Text>
+				<ButtonExtended disabled={!valid}  onClick={getMyGiftCard}  mt={'12px'} backgroundColor='#0398fc' color='white' >
+					<Text bold={true} color='white' justifyContent='center'>Wow! Get my paytm Gift card</Text>
 				</ButtonExtended>
 			</Flex>
 		)

@@ -23,7 +23,7 @@ const Button = styled.button`
   padding: ${props => props.padding};
 
   &:focus {
-    outline: 0;
+    outline: none;
   }
   border-color: #d3dbe6;
   cursor: pointer;
